@@ -1,0 +1,59 @@
+.content {
+    padding: 20px;
+}
+.calen {
+    background-color: #f5f7fa;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 30%;
+}
+.calen .card-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.calen .card-header .card-body {
+    padding: 20px;
+}
+.calen .card-header .card-body button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.calen .card-header .card-body button:hover {
+    background-color: #c0392b;
+}
+.calendar {
+    background-color: #d2b48c;
+    border-radius: 10px;
+    padding: 20px;
+}
+.calendar-header {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.calendar-body {
+    padding: 20px;
+}
+.calendar-body table {
+    width: 100%;
+    text-align: center;
+}
+.calendar-body td {
+    padding: 20px;
+}
+.calendar-body .today {
+    background-color: #8b4513;
+    color: white;
+    border-radius: 50%;
+}

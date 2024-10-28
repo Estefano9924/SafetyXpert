@@ -1,0 +1,115 @@
+
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main-content .user-details {
+    width: 30%;
+    border-radius: 30px;
+    border: 2px grey;
+    text-align: center;
+}
+
+
+.main-content .user-details img {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+}
+
+.main-content  button {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 0px -20px;
+}
+
+.main-content button:hover {
+    background-color: #d35400;
+}
+
+.card-custom {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.card-custom .title {
+    color: #e74c3c;
+    font-size: 16px;
+    font-weight: bold;
+}
+.card-custom .value {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+}
+.card-custom .icon {
+    font-size: 24px;
+    color: #333;
+}
+
+.user-table {
+    margin-top: 20px;
+}
+
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table table th,
+.user-table table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table table th {
+    background-color: rgb(168, 168, 168);
+}
+
+.user-table .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.user-table .pagination .page-item {
+    margin: 0 5px;
+}
+
+.user-table .pagination .page-item a {
+    color: #e74c3c;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.user-table .pagination .page-item a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

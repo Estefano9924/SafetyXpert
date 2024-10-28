@@ -1,0 +1,235 @@
+<div class="general">
+    <div class="row mt-4">
+        <div class="col-md-3">
+            <div class="datos card">
+                <div class="tap card-body">
+                    <div>
+                    <h4 style="font-weight: bold;">
+                        Rutas totales
+                    </h4>
+                    <div id="dato1"></div>
+                    </div>
+                    <div>
+                        <i class="fa fa-map fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="datos card">
+                <div class="tap card-body">
+                    <div>
+                        <h4 style="font-weight: bold;">
+                            Rutas Activas
+                        </h4>
+                        <div id="dato2"></div>
+                    </div>
+                    <div>
+                        <i class="fa fa-map-signs fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="datos card">
+                <div class="tap card-body">
+                    <div >
+                    <h4 style="font-weight: bold;">
+                        Conductores Activos
+                    </h4>
+                    <div id="dato3"></div>
+                    </div>
+                    <div>
+                        <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="datos card">
+                <div class="tap card-body">
+                    <div>
+                    <h4 style="font-weight: bold;">
+                        Proceso General
+                    </h4>
+                    <div id="dato4"></div>
+                    </div>
+                    <div>
+                        <i class="fa fa-spinner fa-2x" aria-hidden="true" ></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-title text-center">
+                    Rutas Clientes por Mes
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="lineChart">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-title text-center">
+                    Rutas actuales
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="doughnutChart">
+                        </canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-title text-center">
+                    Conductores Recientes
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Nombre
+                                </th>
+                                <th>
+                                    Activo desde
+                                </th>
+                                <th>
+                                    Teléfono
+                                </th>
+                                <th>
+                                    Ubicación
+                                </th>
+                                <th>
+                                    Registrado
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Jerry Mattold
+                                </td>
+                                <td>
+                                    19 Mayo, 2021 : 10:00 AM
+                                </td>
+                                <td>
+                                    251-661-5362
+                                </td>
+                                <td>
+                                    New York
+                                </td>
+                                <td>
+                                    S
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Elianora Vasilov
+                                </td>
+                                <td>
+                                    18 Mayo, 2021 : 3:12 PM
+                                </td>
+                                <td>
+                                    171-534-1262
+                                </td>
+                                <td>
+                                    Ontario
+                                </td>
+                                <td>
+                                    No
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Alvis Doan
+                                </td>
+                                <td>
+                                    17 Mayo, 2021 : 2:15 PM
+                                </td>
+                                <td>
+                                    974-661-5110
+                                </td>
+                                <td>
+                                    Milan
+                                </td>
+                                <td>
+                                    S
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Lisa Shipsey
+                                </td>
+                                <td>
+                                    23 Abril, 2021 : 1:15 PM
+                                </td>
+                                <td>
+                                    541-661-3042
+                                </td>
+                                <td>
+                                    San Francisco
+                                </td>
+                                <td>
+                                    S
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    1
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    2
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    3
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    4
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    5
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    ...
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    20
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="JS/dashboard.js"></script>
