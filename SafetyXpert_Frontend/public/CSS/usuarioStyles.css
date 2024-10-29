@@ -2,12 +2,14 @@
 
 .main-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
+    align-items: center;
 }
 
 .main-content .user-details {
     width: 30%;
+    
     border-radius: 30px;
     border: 2px grey;
     text-align: center;
@@ -21,7 +23,7 @@
     margin-bottom: 10px;
 }
 
-.main-content  button {
+.main-content .row  .btn {
     width: 100%;
     margin: 10px 0;
     background-color: #e74c3c;
@@ -32,7 +34,7 @@
     padding: 0px -20px;
 }
 
-.main-content button:hover {
+.main-content .row .btn:hover {
     background-color: #d35400;
 }
 
