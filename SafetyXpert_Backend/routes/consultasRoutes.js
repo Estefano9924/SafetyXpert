@@ -37,7 +37,7 @@ router.get('/countConductoresActivos', async (req, res) => {
 });
 
 // conteo de usuarios Registrados
-router.get('/usuariosRegistrados', async (req, res) => {
+router.get('/countUsuariosRegistrados', async (req, res) => {
     try {
         const usuariosActivos = await Usuario.countDocuments({});
         res.json(usuariosActivos);

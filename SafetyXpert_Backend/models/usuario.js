@@ -17,7 +17,7 @@ const UsuarioSchema = new mongoose.Schema({
   password: { type: String, required: true },
   status: { type: String, enum: ['active', 'inactive'], default: 'active' },
   creationDate: { type: Date, default: Date.now },
-  image: { type: String, required: false }
+  image: { type: String, required: false, default: 'C:\D\pc\Música\SafetyXpert\SafetyXpert_Frontend\public\IMG\perfil.png' }
   
 });
 

@@ -68,6 +68,7 @@
 .user-table table {
     width: 100%;
     border-collapse: collapse;
+    border-radius: 10px;
 }
 
 .user-table table th,
@@ -75,16 +76,19 @@
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    background-color: aliceblue;
 }
 
 .user-table table th {
-    background-color: rgb(168, 168, 168);
+    background-color: transparent;
+    color:#e74c3c
 }
 
 .user-table .pagination {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .user-table .pagination .page-item {
