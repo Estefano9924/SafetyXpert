@@ -9,7 +9,8 @@ async function Consultas(ruta) {
         if (!response.ok) {
             throw new Error('Error en la solicitud');
         }
-        const data = await response.text(); // Usamos text() si solo se devuelve un valor
+        const data = await response.text();
+        console.log(data) // Usamos text() si solo se devuelve un valor
         return data; // Devuelve el dato
     } catch (error) {
         console.error('Error:', error);

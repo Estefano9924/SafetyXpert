@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
   
   // Ruta para la página principal
   router.get('/Dashboard', (req, res) => {
-    res.render('home', { title: 'Principal' });
+    res.render('home', { title: 'Dashboard' });
   });
   
   // Ruta para usuarios

@@ -1,5 +1,4 @@
 import { Consultas } from "./consultas";
-const URLAPI ='http://localhost:5000/api'
 
 
 const user1= '/consultas/countUsuariosRegistrados'

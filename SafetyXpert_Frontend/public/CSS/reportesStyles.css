@@ -11,9 +11,13 @@
             font-weight: bold;
         }
 
+
         .btn-custom {
             background-color: #e74c3c;
+            border-radius: 7px;
+            padding: 4px 7px;
             color: white;
+            font-weight: 500;
             border: none;
             margin: 5px;
         }

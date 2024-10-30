@@ -119,3 +119,13 @@
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
+.modal-header{
+    background-color: #e74c3c;
+    color: white;
+
+}
+
+.modal-header .btn-close{
+    color: white;
+}

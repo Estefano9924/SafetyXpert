@@ -1,59 +1,95 @@
-.content {
-    padding: 20px;
-}
-.calen {
-    background-color: #f5f7fa;
-    border: none;
+.calendar-container {
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    width: 30%;
-}
-.calen .card-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-.calen .card-header .card-body {
-    padding: 20px;
-}
-.calen .card-header .card-body button {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-.calen .card-header .card-body button:hover {
-    background-color: #c0392b;
-}
-.calendar {
-    background-color: #d2b48c;
-    border-radius: 10px;
-    padding: 20px;
+    overflow: hidden;
 }
 .calendar-header {
-    background-color: #e74c3c;
-    color: white;
+    background-color: #424242;
+    color: #fff;
     padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calendar-header i {
+    font-size: 1.2em;
 }
 .calendar-body {
-    padding: 20px;
+    padding: 10px;
 }
-.calendar-body table {
+.event-button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
     width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar {
+    background: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2);
+    padding: 10px 50px;
+
+}
+
+.calendar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e74c3c;
+    color: aliceblue;
+}
+
+.calendar .header a{
+    padding-left: 30px;
+    padding-right: 30px;  
+}
+
+.calendar .header a:hover{
+    background-color: white;
+    border-radius: 7px; 
+}
+
+#monthAndYear {
+    margin: 0;
+}
+
+.days, .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #e68964;
+    color: #fff;
+}
+
+
+
+.day {
+    font-weight: bold;
     text-align: center;
+    padding: 10px;
+    
 }
-.calendar-body td {
-    padding: 20px;
+
+.date {
+
+    padding: 40px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
-.calendar-body .today {
-    background-color: #8b4513;
-    color: white;
-    border-radius: 50%;
+
+.date:hover {
+    background: #c4685e;
+}
+
+.today {
+    background: #e74c3c; /* Color azul */
+    color: white; /* Texto blanco */
 }

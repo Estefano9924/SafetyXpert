@@ -1,62 +1,73 @@
 <div class="general">
-    <div class="report-section">
-        <h5>
-            Generar Reporte
-        </h5>
-        <form>
-            <div class="row mb-3">
-                <div class="col">
-                    <label class="form-label" for="client">
-                        Cliente*
-                    </label>
-                    <input class="form-control" id="client" type="text" value="EPM" />
+    <div class="container my-5">
+        <div class="report-section">
+            <h5 class="mb-4 ms-3">
+                Generar Reporte
+            </h5>
+            <form>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="form-label" for="client">
+                            Cliente*
+                        </label>
+                        <select class="form-select" id="route">
+                            <option selected="">
+                                Select
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label class="form-label" for="startDate">
+                            Fecha inicio*
+                        </label>
+                        <input class="form-control" id="startDate" type="date" value="2021-12-24" />
+                    </div>
+                    <div class="col">
+                        <label class="form-label" for="endDate">
+                            Fecha inicio*
+                        </label>
+                        <input class="form-control" id="endDate" type="date" value="2021-12-24" />
+                    </div>
                 </div>
-                <div class="col">
-                    <label class="form-label" for="startDate">
-                        Fecha inicio*
-                    </label>
-                    <input class="form-control" id="startDate" type="date" value="2021-12-24" />
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="form-label" for="driver">
+                            Conductor
+                        </label>
+                        <select class="form-select" id="route">
+                            <option selected="">
+                                Select
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label class="form-label" for="route">
+                            Estado
+                        </label>
+                        <select class="form-select" id="route">
+                            <option selected="">
+                                Select
+                            </option>
+                        </select>
+                    </div>
                 </div>
-                <div class="col">
-                    <label class="form-label" for="endDate">
-                        Fecha inicio*
-                    </label>
-                    <input class="form-control" id="endDate" type="date" value="2021-12-24" />
+                <div class="d-flex justify-content-center">
+                    <button class="btn-custom" type="button">
+                        Generar vista previa
+                    </button>
+                    <button class="btn-custom" type="button">
+                        Reporte PDF
+                    </button>
+                    <button class="btn-custom" type="button">
+                        Reporte EXCEL
+                    </button>
                 </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col">
-                    <label class="form-label" for="driver">
-                        Conductor
-                    </label>
-                    <input class="form-control" id="driver" type="text" />
-                </div>
-                <div class="col">
-                    <label class="form-label" for="route">
-                        Estado
-                    </label>
-                    <select class="form-select" id="route">
-                        <option selected="">
-                            Select
-                        </option>
-                    </select>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <button class="btn-custom btn" type="button">
-                    Generar vista previa
-                </button>
-                <button class="btn-custom btn" type="button">
-                    Reporte PDF
-                </button>
-                <button class="btn-custom btn" type="button">
-                    Reporte EXCEL
-                </button>
-            </div>
-        </form>
+            </form>
+
+        </div>
     </div>
     <div class="preview-section">
-        <h5>
+        <h5 class="mb-4 ms-3">
             Vista Previa
         </h5>
         <table class="table">

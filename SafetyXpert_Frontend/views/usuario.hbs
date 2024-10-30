@@ -23,7 +23,7 @@
                 </button>
                 <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-dialog modal-dialog-centered modal-xl">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Crear Usuario</h1>
@@ -31,11 +31,75 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <div class="mb-3">
+                                    <label for="usuario" class="form-label">Usuario*</label>
+                                    <input type="text" class="form-control" id="usuario"
+                                        placeholder="email@address.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="rol" class="form-label">Rol</label>
+                                    <select class="form-select" id="rol">
+                                        <option selected>Select</option>
+                                        <!-- Add other roles as needed -->
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="nombre" class="form-label">Nombre*</label>
+                                        <input type="text" class="form-control" id="nombre" placeholder="John">
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="apellidos" class="form-label">Apellidos*</label>
+                                        <input type="text" class="form-control" id="apellidos" placeholder="Doe">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="direccion" class="form-label">Dirección</label>
+                                    <input type="text" class="form-control" id="direccion"
+                                        placeholder="calle # 154 - 45 int">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="genero" class="form-label">Género</label>
+                                        <select class="form-select" id="genero">
+                                            <option selected>Select</option>
+                                            <!-- Add other genders as needed -->
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3 text-center">
+                                        <label class="form-label d-block">&nbsp;</label>
+                                        <button type="button" class="btn btn-outline-secondary w-100">Inserte
+                                            Imagen</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="documento" class="form-label">Documento Identidad*</label>
+                                        <select class="form-select" id="documento">
+                                            <option selected>Select</option>
+                                            <!-- Add other document types as needed -->
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="numero-id" class="form-label">Numero ID*</label>
+                                        <input type="email" class="form-control" id="numero-id"
+                                            placeholder="email@address.com">
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="telefono" class="form-label">Numero Teléfono*</label>
+                                        <input type="text" class="form-control" id="telefono" placeholder="3456757456">
+                                    </div>
+                                </div>
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" type="checkbox" id="confidencialidad">
+                                    <label class="form-check-label" for="confidencialidad">
+                                        Acepta acuerdo de Confidencialidad
+                                    </label>
+                                </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Understood</button>
+                                <button type="button" class=" btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class=" btn-primary">Understood</button>
                             </div>
                         </div>
                     </div>
@@ -112,7 +176,7 @@
     <div class="py-2 px-3 rounded-4">
         <div class="user-table mx-3">
             <div>
-                <h3 class="ms-5">Usuarios</h3>
+                <h4 class="ms-5 fw-bold">Usuarios</h4>
                 <div class="search-bar me-3" style="align-items: center;">
                     <input placeholder="francisco" type="text" id="Buscar" style="margin-right:10px" />
                     <a><i class="fa fa-search fa-1x" aria-hidden="true"></i></a>
