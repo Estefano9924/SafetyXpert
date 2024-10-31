@@ -18,12 +18,12 @@
         </div>
         <div class="container col-md-4">
             <div class="row col-md-6 offset-md-4">
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                <button type="button" class="btn btn-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
                     Crear Usuario
                 </button>
                 <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Crear Usuario</h1>
@@ -31,83 +31,142 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <div class="mb-3">
-                                    <label for="usuario" class="form-label">Usuario*</label>
-                                    <input type="text" class="form-control" id="usuario"
-                                        placeholder="email@address.com">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="rol" class="form-label">Rol</label>
-                                    <select class="form-select" id="rol">
-                                        <option selected>Select</option>
-                                        <!-- Add other roles as needed -->
-                                    </select>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="nombre" class="form-label">Nombre*</label>
-                                        <input type="text" class="form-control" id="nombre" placeholder="John">
+                                <div class="container p-3">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <label for="nombre" class="form-label">Nombres*</label>
+                                            <input type="text" class="form-control" id="nombre" placeholder="John">
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="apellidos" class="form-label">Apellido Paterno*</label>
+                                            <input type="text" class="form-control" id="apellidos" placeholder="Doe">
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="apellidos" class="form-label">Apellido Materno*</label>
+                                            <input type="text" class="form-control" id="apellidos" placeholder="Doe">
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="apellidos" class="form-label">Apellidos*</label>
-                                        <input type="text" class="form-control" id="apellidos" placeholder="Doe">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <label for="documento" class="form-label">Documento Identidad*</label>
+                                            <select class="form-select" id="documento">
+                                                <option selected>Select</option>
+                                                <!-- Add other document types as needed -->
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="numero-id" class="form-label">Numero ID*</label>
+                                            <input type="email" class="form-control" id="numero-id"
+                                                placeholder="353543534">
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="genero" class="form-label">Género</label>
+                                            <select class="form-select" id="genero">
+                                                <option selected>Select</option>
+                                                <!-- Add other genders as needed -->
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="direccion" class="form-label">Dirección</label>
-                                    <input type="text" class="form-control" id="direccion"
-                                        placeholder="calle # 154 - 45 int">
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="genero" class="form-label">Género</label>
-                                        <select class="form-select" id="genero">
-                                            <option selected>Select</option>
-                                            <!-- Add other genders as needed -->
-                                        </select>
+                                    <div class="row">
+                                        <label for="datos" class="form-label">Fecha y hora de nacimiento</label>
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <label for="documento" class="form-label">Pais*</label>
+                                                <select class="form-select" id="documento">
+                                                    <option selected>Select</option>
+                                                    <!-- Add other document types as needed -->
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label for="documento" class="form-label">Departamento*</label>
+                                                <select class="form-select" id="documento">
+                                                    <option selected>Select</option>
+                                                    <!-- Add other document types as needed -->
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 mb-3">
+                                                <label for="genero" class="form-label">Ciudad*</label>
+                                                <select class="form-select" id="genero">
+                                                    <option selected>Select</option>
+                                                    <!-- Add other genders as needed -->
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="nacimiento">Fecha de nacimiento</label>
+                                            <input type="date" id="nacimiento" name="nacimiento" class="form-control">
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 mb-3 text-center">
-                                        <label class="form-label d-block">&nbsp;</label>
-                                        <button type="button" class="btn btn-outline-secondary w-100">Inserte
-                                            Imagen</button>
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <label for="documento" class="form-label">Genero*</label>
+                                            <select class="form-select" id="">
+                                                <option selected>Select</option>
+                                                <!-- Add other document types as needed -->
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="numero-id" class="form-label">N° Telefonico*</label>
+                                            <input type="phone" class="form-control" id="numero-id"
+                                                placeholder="353543534">
+                                        </div>
+
+                                        <div class="col-md-4 mb-3">
+                                            <label for="direccion" class="form-label">Dirección</label>
+                                            <input type="text" class="form-control" id="direccion"
+                                                placeholder="calle # 154 - 45 int">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4 mb-3">
-                                        <label for="documento" class="form-label">Documento Identidad*</label>
-                                        <select class="form-select" id="documento">
-                                            <option selected>Select</option>
-                                            <!-- Add other document types as needed -->
-                                        </select>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="row col-md-6">
+                                            <div class="mb-3">
+                                                <label for="usuario" class="form-label">Usuario*</label>
+                                                <input type="text" class="form-control" id="usuario"
+                                                    placeholder="amercado">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="contraseña" class="form-label">Contraseña*</label>
+                                                <input type="text" class="form-control" id="usuario"
+                                                    placeholder="amercado">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="rol" class="form-label">Rol</label>
+                                                <select class="form-select" id="rol">
+                                                    <option selected>Select</option>
+                                                    <!-- Add other roles as needed -->
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row col-md-6">
+                                            <div class="d-flex align-items-center justify-content-center mt-3">
+                                                <img alt="User Image" height="200" width="200"
+                                                    src="https://storage.googleapis.com/a1aa/image/rxVrXWMEJU40AxK3MiehJFaeUpLv3IVbe0BAq5mTOLVhnqVnA.jpg" />
+                                            </div>
+                                            <div class="mb-3 text-center">
+                                                <button type="file" class="btn btn-outline-secondary">Inserte
+                                                    Imagen</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label for="numero-id" class="form-label">Numero ID*</label>
-                                        <input type="email" class="form-control" id="numero-id"
-                                            placeholder="email@address.com">
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox bg-danger" id="confidencialidad">
+                                        <label class="form-check-label" for="confidencialidad">
+                                            Acepta acuerdo de Confidencialidad
+                                        </label>
                                     </div>
-                                    <div class="col-md-4 mb-3">
-                                        <label for="telefono" class="form-label">Numero Teléfono*</label>
-                                        <input type="text" class="form-control" id="telefono" placeholder="3456757456">
-                                    </div>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" id="confidencialidad">
-                                    <label class="form-check-label" for="confidencialidad">
-                                        Acepta acuerdo de Confidencialidad
-                                    </label>
+
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class=" btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class=" btn-primary">Understood</button>
+                            <div class="modal-footer d-flex justify-content-start">
+                                <button type="button" id="Submit" class="btn btn-primary px-5" style="background-color: #e74c3c;">Agregar</button>
+                                <button type="button" class="btn px-5" data-bs-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn my-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                <button type="button" class="btn btn-1 my-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
                     Editar Usuario
                 </button>
-
                 <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
@@ -121,16 +180,16 @@
                                 ...
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Understood</button>
+
+                                <button type="button" id="Sybmit" class="btn btn-primary">Guardar</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+                <button type="button" class="btn btn-1" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
                     Eliminar Usuario
                 </button>
-
                 <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
