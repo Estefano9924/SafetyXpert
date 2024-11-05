@@ -17,5 +17,12 @@ fechaUltimaVezActivo: {
   },
 });
 
+
+const VistaConductorSchema = new mongoose.Schema({}, { collection: 'vistaConductores' });
+
+
 // Exportar el modelo
-module.exports = mongoose.model('Conductor', ConductorSchema);
+module.exports = {
+  Conductor: mongoose.model('Conductor', ConductorSchema),
+  VistaConductor: mongoose.model('VistaConductor', VistaConductorSchema)
+};

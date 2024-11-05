@@ -3,6 +3,7 @@ const router = express.Router();
 const Usuario = require('../models/usuario');
 const Rutas = require('../models/rutas');
 const RutaHistorico = require('../models/rutasProceso');
+const {Conductor, VistaConductor} = require('../models/conductor');
 
 
 
@@ -57,14 +58,25 @@ router.get('/usuariosActivos', async (req, res) => {
 });
 
 //reporte de conductores activos
-router.get('/conductoresActivos', async (req, res) => {
+
+router.get('/conductoresDHB', async (req, res) => {
     try {
-        const usuarios = await Usuario.find({ status: 'active', rol: 'conductor' });
+        const usuarios = await VistaConductor.find();
+        console.log(usuarios)
         res.json(usuarios);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
 });
+
+// router.get('/conductoresActivos', async (req, res) => {
+//     try {
+//         const usuarios = await Usuario.find({ status: 'active', rol: 'conductor' });
+//         res.json(usuarios);
+//     } catch (error) {
+//         res.status(500).json({ error: error.message });
+//     }
+// });
 
 //Counter de rutas activas
 router.get('/countRutasActivas', async (req, res) => {

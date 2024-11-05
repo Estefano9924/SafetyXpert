@@ -158,7 +158,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer d-flex justify-content-start">
-                                <button type="button" id="Submit" class="btn btn-primary px-5" style="background-color: #e74c3c;">Agregar</button>
+                                <button type="button" id="Submit" class="btn btn-primary px-5"
+                                    style="background-color: #e74c3c;">Agregar</button>
                                 <button type="button" class="btn px-5" data-bs-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
@@ -211,23 +212,22 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class=" col-md-6 offset-md-4">
-                    <div class="card-custom mt-4" style="margin-bottom: 100px;">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="title">Usuarios Registrados</span>
-                            <i class="fas fa-users icon"></i>
-                        </div>
-                        <div class="value" id="dato1"></div>
+        <div class="container d-flex justify-content-center">
+
+            <div class="col-md-8">
+                <div class="card-custom" style="margin-bottom: 100px;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="title">Usuarios Registrados</span>
+                        <i class="fas fa-users icon"></i>
                     </div>
-                    <div class="card-custom">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="title">Usuarios Activos</span>
-                            <i class="fas fa-user-clock icon"></i>
-                        </div>
-                        <div class="value" id="dato2"></div>
+                    <div class="value" id="dato1"></div>
+                </div>
+                <div class="card-custom">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="title">Usuarios Activos</span>
+                        <i class="fas fa-user-clock icon"></i>
                     </div>
+                    <div class="value" id="dato2"></div>
                 </div>
             </div>
         </div>
@@ -248,139 +248,24 @@
                             Nombre
                         </th>
                         <th>
-                            Registrado en
+                            Rol
                         </th>
                         <th>
                             Documento Identificación
                         </th>
                         <th>
+                            Registrado en
+                        </th>
+                        <th>
                             Teléfono
                         </th>
                         <th>
-                            Ciudad Residencia
+                            usuario
                         </th>
+
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            Jerry Mattedi
-                        </td>
-                        <td>
-                            19 Mayo, 2021 10:10 AM
-                        </td>
-                        <td>
-                            1234567
-                        </td>
-                        <td>
-                            251-661-5362
-                        </td>
-                        <td>
-                            New York
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Eliano Vasilov
-                        </td>
-                        <td>
-                            18 Mayo, 2021 3:12 PM
-                        </td>
-                        <td>
-                            45675672
-                        </td>
-                        <td>
-                            171-534-1262
-                        </td>
-                        <td>
-                            Ontario
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Jerry Mattedi
-                        </td>
-                        <td>
-                            19 Mayo, 2021 10:10 AM
-                        </td>
-                        <td>
-                            1234567
-                        </td>
-                        <td>
-                            251-661-5362
-                        </td>
-                        <td>
-                            New York
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Alvis Dean
-                        </td>
-                        <td>
-                            17 Mayo, 2021 2:15 PM
-                        </td>
-                        <td>
-                            7895675
-                        </td>
-                        <td>
-                            974-661-5110
-                        </td>
-                        <td>
-                            Milan
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Eliano Vasilov
-                        </td>
-                        <td>
-                            18 Mayo, 2021 3:12 PM
-                        </td>
-                        <td>
-                            45675672
-                        </td>
-                        <td>
-                            171-534-1262
-                        </td>
-                        <td>
-                            Ontario
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Lisa Shipsey
-                        </td>
-                        <td>
-                            23 Abril, 2021 3:21 PM
-                        </td>
-                        <td>
-                            7897878
-                        </td>
-                        <td>
-                            541-661-3042
-                        </td>
-                        <td>
-                            San Francisco
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Lisa Shipsey
-                        </td>
-                        <td>
-                            23 Abril, 2021 1:15 PM
-                        </td>
-                        <td>
-                            7897878
-                        </td>
-                        <td>
-                            541-661-3042
-                        </td>
-                        <td>
-                            San Francisco
-                        </td>
-                    </tr>
+                <tbody id="dato5">
                 </tbody>
             </table>
             <div class="pagination">

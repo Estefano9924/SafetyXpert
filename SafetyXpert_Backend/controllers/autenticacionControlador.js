@@ -24,12 +24,10 @@ const registrarUsuario = async (req, res) => {
 
 const iniciarSesion = async (req, res) => {
     const { username, password } = req.body;
-    console.log({ username, password })
 
     try {
         // Buscar al usuario por email
         const usuario = await Usuario.findOne({ username });
-        console.log(usuario);
         if (!usuario) {
             return res.status(404).json({ mensaje: 'Usuario no encontrado' });
             
